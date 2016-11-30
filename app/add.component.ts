@@ -24,7 +24,7 @@ template: `
         </div>
         <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !userId.valid }">
             <label for="userId">UserId</label>
-            <input type="text" class="form-control" name="userId" [(ngModel)]="model.userId" [value]={{currentUser.id}} required />
+            <input type="text" class="form-control" name="userId" [(ngModel)]="model.userId" required />
             <div *ngIf="f.submitted && !userId.valid" class="help-block">UserId is required</div>
         </div>
         <!--<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
